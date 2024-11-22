@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2e4eadc22.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hmain">
+            <div class="hl">
+                <h1><b>Hi, I'm <span>[Your name]</span></b></h1>
+            </div>
+            <div class="hr">
+                <img class="himg" src="pictures/pngtree-happy-smile-man-png-image_13149982-removebg-preview.png">
+            </div>
+            
+        </div>
+    </div>
+  </div> 
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/man1.jpg.jpg" width="" height="300" alt="Sample">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"><b>About me</b></h1>
+                <p>Hi, I'm [Your Name], a Computer Science enthusiast with skills in Java, Python, HTML, and CSS. I enjoy bringing ideas to life through code, whether it’s building interactive websites or developing technical projects. My expertise in website blueprints and CSE projects helps me design and structure software solutions effectively. I'm passionate about constantly learning and refining my skills, and I'm always excited to take on new challenges in web and software development.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021</span><br>UI/UX design training</li>
+                        <li><span>2020</span><br>Team lead at Starapp LLC.</li>
+                        <li><span>2019</span><br>internship </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>[Present specialization and doing from where.]</li>
+                        <li><span>2023</span><br>[last degree you have done and from where.]</li>
+                        <li><span>2022</span><br>[first degree you have done and from where.] </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div id="services">
+    <div class = "container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web design</h2>
+                <p>Hi, I'm [Your Name], a Computer Science enthusiast with skills in Java, Python, HTML, and CSS. I enjoy bringing ideas to life through code, whether it's building interactive websites or developing technical projects. My expertise in website blueprints and CSE projects helps me design and structure software solutions effectively. I'm passionate about constantly learning and refining my skills,
+                 and I'm always excited to take on new challenges in web and software development.</p>
+                 <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX design</h2>
+                <p>Hi, I'm [Your Name], a Computer Science enthusiast with skills in Java, Python, HTML, and CSS. I enjoy bringing ideas to life through code, whether it's building interactive websites or developing technical projects. My expertise in website blueprints and CSE projects helps me design and structure software solutions effectively. I'm passionate about constantly learning and refining my skills,
+                 and I'm always excited to take on new challenges in web and software development.</p>
+                 <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>Hi, I'm [Your Name], a Computer Science enthusiast with skills in Java, Python, HTML, and CSS. I enjoy bringing ideas to life through code, whether it's building interactive websites or developing technical projects. My expertise in website blueprints and CSE projects helps me design and structure software solutions effectively. I'm passionate about constantly learning and refining my skills,
+                 and I'm always excited to take on new challenges in web and software development.</p>
+                 <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<div class="new">
+  <div id="contact">
+    <div class="">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>0123456789</p>
+                <div class="social-icons">
+                    <a href=""></i></i><img src="pictures/mdi_twitter.png"></a>
+                    <a href=""></i><img src="pictures/mdi_linkedin.png"></a>
+                    <a href=""></i><img src="pictures/fe_facebook.png"></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" value="Ashwani Yadav"><br>
+                    <input type="email" name="email" placeholder="Your Email" value="ashwani25@gmail.com"required><br>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+  <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-link");
+        }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+<footer>
+    Made by Ashwani kumar(12410217)
+</footer>
+</body>
+</html>
